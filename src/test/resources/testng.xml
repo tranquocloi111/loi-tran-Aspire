@@ -1,0 +1,13 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="RegressionSuite" verbose="2">
+    <listeners>
+        <listener class-name="framework.report.AnnotationTransformer"/>
+    </listeners>
+    <test name="Front_Office" parallel="methods" thread-count="3">
+        <packages>
+            <package name="suite.regression.UI"/>
+        </packages>
+    </test>
+</suite>
+
